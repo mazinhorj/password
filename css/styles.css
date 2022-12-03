@@ -1,0 +1,236 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Asap:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Asap', sans-serif;
+    box-sizing: border-box;
+    color: #57472E;
+}
+
+html,
+body {
+    height: auto;
+    min-height: 96vh;
+}
+
+html {
+    background: linear-gradient(180deg, #D6D7D9 25%, #E7DAA5 100%);
+}
+
+input:focus {
+    outline: none;
+}
+
+#register_container {
+    max-width: 900px;
+    background-color: #e6e6e6;
+    min-height: 78vh;
+    margin: 2rem auto;
+    display: flex;
+    box-shadow: 2px 2px 8px 2px rgba(0, 0, 0, 0.181);
+    border-radius: 4px;
+}
+
+#register_banner {
+    background: url('../img/lock.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    width: 50%;
+}
+
+#register_banner h1 {
+    font-size: 4.4rem;
+    color: #e6e6e6;
+    margin-bottom: 1.8rem;
+    word-spacing: 48rem;
+}
+
+#banner_layer {
+    background-color: rgba(87, 71, 46, 0.7);
+    height: 100%;
+    padding: 2rem;
+    display: flex;
+    align-items: center;
+    border-radius: 4px 0 0 4px;
+}
+
+#register_form_h {
+    padding: .4rem;
+}
+
+#register_form_h h2 {
+    text-align: center;
+    margin: 1.4rem auto;
+    font-size: 2.4rem;
+}
+
+#register_form_h p {
+    text-align: center;
+    margin: 1.2rem auto;
+    font-size: 1rem;
+    color: #57472eba;
+}
+
+#register_form {
+    margin: 0 auto;
+    width: 100%;
+    padding: 1.2rem;
+    display: flex;
+    flex-direction: column;
+    border-radius: 4px;
+}
+
+.form_control {
+    margin-bottom: 1rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.form_control label {
+    font-weight: bold;
+    margin-bottom: .4rem;
+}
+
+.form_control input[type="text"],
+.form_control input[type="email"],
+.form_control input[type="password"] {
+    border: none;
+    border-bottom: 1px solid #57472E;
+    background-color: transparent;
+    padding: .4rem 0;
+    height: 40px;
+}
+
+#abre_opt {
+    font-weight: bold;
+    color: #B8A07E;
+    cursor: pointer;
+    
+}
+
+#abre_opt:hover {
+    transition: .4s;
+    color: #57472E;
+}
+
+#gerar_opt {
+    margin-bottom: 1rem;
+    padding: 1rem;
+    border: 1px solid #775b35;
+    border-radius: 4px;
+    display: flex;
+    flex-direction: column;
+}
+
+
+#gerar_opt .form_control {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #57472e55;
+    margin-bottom: .4rem;
+}
+
+#gerar_opt .form_control:last-child {
+    border: none;
+}
+
+#gerar_opt #gerar_btn {
+    display: flex;
+    align-self: center;
+    margin-top: 1rem;
+}
+
+#gerar_opt label {
+    font-size: .8rem;
+    
+}
+
+#gerar_opt input[type="number"] {
+    max-width: 50px;
+    text-align: center;
+    border: 1px solid #57472E;
+    font-size: 1rem;
+}
+
+#gerar_opt.hide {
+    display: none;
+}
+
+#alerta1, 
+#alerta2 {
+    background-color: rgba(255, 91, 91, 0.15);
+    transition: .4s;
+    padding: .8rem;
+    /* height: 44px; */
+    margin-bottom: 1rem;
+}
+
+#alerta1 p,
+#alerta2 p {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: red;
+}
+
+#alerta1.hide,
+#alerta2.hide {
+    display: none;
+}
+
+#register_form #senha_gerada {
+    border: 1px solid #57472E;
+    border-radius: 8px;
+    padding: .4rem;
+    margin-bottom: 1rem;
+    display: none;
+    text-align: center;
+}
+
+#register_form #senha_gerada p {
+    color: #775b35;
+    font-weight: bold;
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+}
+
+#register_form #senha_gerada h4 {
+    color: #775b35;
+    font-weight: bolder;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+#register_form input[type="submit"],
+#gerar_btn,
+#copiar_senha {
+    background-color: #D6D7D9;
+    color: #57472E;
+    border: 1px solid #57472E;
+    border-radius: 24px;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 1rem 1.4rem;
+    max-width: 200px;
+    align-self: flex-end;
+    cursor: pointer;
+}
+
+#gerar_btn,
+#copiar_senha {
+    padding: .6rem 1rem;
+}
+
+#register_form input[type="submit"]:hover,
+#gerar_btn:hover,
+#copiar_senha:hover {
+    background-color: #57472E;
+    color: #D6D7D9;
+    transition: .4s;
+}
+

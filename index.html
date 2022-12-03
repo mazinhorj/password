@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="Osmar Menezes da Silva">
+        <title>Gerador de Senha</title>
+        <link rel="stylesheet" href="css/styles.css">
+        <link rel="shortcut icon" href="img/favicon.ico" type="image/gif">
+        <script src="js/scripts.js" defer></script>
+    </head>
+
+    <body>
+        <div id="register_container">
+            <div id="register_banner">
+                <div id="banner_layer">
+                    <h1>Seja bem-vind@</h1>
+                </div>
+            </div>
+            <div id="register_form_h">
+                <h2>Crie sua conta:</h2>
+                <p>Registre-se para utilizar o sistema.</p>
+                <form id="register_form">
+                    <div class="form_control">
+                        <label for="name">Nome:</label>
+                        <input type="text" name="name" id="name" placeholder="Digite seu nome" required autocomplete="username">
+                    </div>
+                    <div class="form_control">
+                        <label for="email">E-mail:</label>
+                        <input type="email" name="email" id="email" placeholder="Digite seu e-mail" required autocomplete="email">
+                    </div>
+                    <div class="form_control">
+                        <label for="password">Senha:</label>
+                        <input type="password" name="password" id="password" placeholder="Digite sua senha" required autocomplete="new-password">
+                    </div>
+                    <p>Quer ajuda para criar uma senha segura? <span id="abre_opt">Clique aqui</span></p>
+                    <div id="alerta1" class="hide">
+                        <p>Utilize no mínimo 8 caracteres!</p>
+                    </div>
+                    <div id="alerta2" class="hide">
+                        <p>Marque pelo menos 1 opção!</p>
+                    </div>
+                    <div id="gerar_opt" class="hide">
+                        <p>Como você quer sua senha?</p>
+                        <div class="form_control">
+                            <label for="tamanho">Quantidade de caracteres:</label>
+                            <input type="number" name="tamanho" id="tamanho" value="10">
+                        </div>
+                        <div class="form_control">
+                            <label for="letras">Letras: </label>
+                            <input type="checkbox" name="letras" id="letras" checked>
+                        </div>
+                        <div class="form_control">
+                            <label for="numeros">Números:</label>
+                            <input type="checkbox" name="numeros" id="numeros" checked>
+                        </div>
+                        <div class="form_control">
+                            <label for="symbolos">Símbolos:</label>
+                            <input type="checkbox" name="symbolos" id="symbolos" checked>
+                        </div>
+                        <button id="gerar_btn">Gerar senha</button>
+                    </div>
+                    <div id="senha_gerada">
+                        <p>Sua nova senha:</p>
+                        <h4></h4>
+                        <button id="copiar_senha">Copiar</button>
+                    </div>
+                    <div class="form_control">
+                        <label for="check_password">Confirme sua senha:</label>
+                        <input type="password" name="check_password" id="check_password"
+                            placeholder="Digite sua senha novamente" required autocomplete="new-password">
+                    </div>
+                    <input type="submit" value="Cadastrar">
+                </form>
+            </div>
+        </div>
+    </body>
+
+</html>
